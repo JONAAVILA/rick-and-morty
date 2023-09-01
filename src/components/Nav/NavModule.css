@@ -1,0 +1,13 @@
+
+.Nav_conteiner {
+    width: 100%;
+    background-color: rgb(139, 240, 161);
+    padding: 20px;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+
+}
+.button {
+    font-family: 'Anton', sans-serif;
+}
