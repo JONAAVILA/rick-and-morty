@@ -39,7 +39,7 @@ function App() {
 
 
    function onSearch (id){
-      axios(`http://localhost:3001/rickandmorty/character/${id}}`).then(({ data })=>{
+      axios(`http://localhost:3001/rickandmorty/character/${id}`).then(({ data })=>{
             if(data.name){
                const existingCharacter = characters.find((character)=>character.id === data.id);
                if(existingCharacter){
