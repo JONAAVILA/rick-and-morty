@@ -1,11 +1,11 @@
 const express = require("express");
 const { getCharById, login, postFav, deleteFav } = require("../controllers");
 
-const Routes = express.Router();
+const router = express.Router();
 
-Routes.get("/character/:id",getCharById);
-Routes.get("/login", login);
-Routes.post("/fav", postFav);
-Routes.delete("/fav/:id",deleteFav);
+router.get("/character/:id", getCharById);
+router.get("/login", login);
+router.post("/fav", postFav);
+router.delete("/fav/:id", deleteFav);
 
-module.exports = Routes;
+module.exports = router;
