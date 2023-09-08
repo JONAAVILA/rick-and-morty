@@ -1,20 +1,20 @@
-const http = require("http");
-const { getCharById } = require("./controllers/getCharById");
+// const http = require("http");
+// const { getCharById } = require("./controllers/getCharById");
 // const characters = require('./utils/data');
 
-const PORT = 3001;
+// const PORT = 3001;
 
-const server = http.createServer((req, res)=>{
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    const { url } = req;
+// const server = http.createServer((req, res)=>{
+//     res.setHeader('Access-Control-Allow-Origin', '*');
+//     const { url } = req;
     
-    if(url.includes("/rickandmorty/character")){
-        const id = +req.url.split("/").pop();
-        getCharById(res,id)
-    } else {
-        res.writeHead(404, { 'Content-Type': 'application/json' })
-        res.end(JSON.stringify({error:"not found"}))
-    }
+//     if(url.includes("/rickandmorty/character")){
+//         const id = +req.url.split("/").pop();
+//         getCharById(res,id)
+//     } else {
+//         res.writeHead(404, { 'Content-Type': 'application/json' })
+//         res.end(JSON.stringify({error:"not found"}))
+    // }
     // if(url.includes('/rickandmorty/character')){
     //     const id = +req.url.split('/').at(-1)[0];
     //     const character = characters.find(char => char.id === id );
@@ -26,5 +26,13 @@ const server = http.createServer((req, res)=>{
     //     }
     // }
     
-});
-server.listen(PORT, () => {console.log(`server levantado en el puerto ${PORT}`)} );
+// });
+// server.listen(PORT, () => {console.log(`server levantado en el puerto ${PORT}`)} );
+
+const express = require("express");
+const server = express();
+const PORT = 3001;
+
+server.listen(PORT, ()=>{
+    console.log("Server raised in" + PORT);
+})
