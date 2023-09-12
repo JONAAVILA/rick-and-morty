@@ -1,2 +1,15 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: "poppins", sans-serif; 
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.App{
+    display: grid;
+    background-color: #2e2e2e;
+    grid-template-columns: 1fr 4fr;
 }

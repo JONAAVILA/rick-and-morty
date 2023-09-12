@@ -1,7 +1,9 @@
-import Card from './Card';
+import Card from '../Card/Card';
+import './Cards.css';
 
 export default function Cards({ characters, onClose }) {
-   return   ( <div>
+   return   ( 
+         <div>
                   {characters.map((person)=>{
                         return (
                      <Card
@@ -16,5 +18,6 @@ export default function Cards({ characters, onClose }) {
                         onClose={onClose}
                      />);
                   })}
-             </div>)
+         </div>   
+      )
 }

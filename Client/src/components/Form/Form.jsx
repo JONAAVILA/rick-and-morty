@@ -30,7 +30,8 @@ const Form = ({login})=>{
     return (
         <section>   
             <div className="box_form">
-                <div>
+                <div className="conteiner">
+                    
                     <form onSubmit={handleSubmit}>
                         <h1>Bienvenidos</h1>
                         <h4>Rick and Morty App</h4>
@@ -52,9 +53,7 @@ const Form = ({login})=>{
                         ></input>
                         <label className="input_label">Email</label>
                     </div>
-                    <div>
-                        {errors.email && <p>{errors.email}</p>}
-                    </div>
+                    
                     <div className="div_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-key" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -76,6 +75,9 @@ const Form = ({login})=>{
                     </div>
                     <div>
                         <button className="button_submit" >Submit</button>
+                    </div>
+                    <div className="error">
+                        {errors.email && <p>{errors.email}</p>}
                     </div>
                     </form>
                 </div>
