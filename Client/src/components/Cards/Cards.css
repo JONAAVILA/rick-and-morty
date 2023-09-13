@@ -1,0 +1,7 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    color: #f3f3f3;
+    font-size:12px;
+}

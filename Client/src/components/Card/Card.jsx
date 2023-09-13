@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { addFav, removeFav } from "../../Redux/Actions";
 import { useDispatch, useSelector } from "react-redux";
 import { useState, useEffect } from "react";
+import './Card.css';
 
 
 
@@ -39,23 +40,33 @@ export default function Card(props) {
    
    return (
       
-      <div>
+      <div className="card_character">
          {
          isFav ? (
-         <button onClick={handleFavorite}>❤️</button>
+         <div className="button_fav">
+            <button onClick={handleFavorite}>❤️</button>  
+         </div>
          ) : (
-         <button onClick={handleFavorite}>🤍</button>
+         <div className="button_fav">
+            <button onClick={handleFavorite}>🤍</button>  
+         </div>
          )
          }
-         {showButtonX && <button onClick={()=> props.onClose(props.id)}>X</button>}
-         <Link to={`/detail/${props.id}`}>
-            <h2>{props.name}</h2>
-         </Link>
-         <h2>{props.status}</h2>
-         <h2>{props.species}</h2>
-         <h2>{props.gender}</h2>
-         <h2>{props.origin}</h2>
-         <img src={props.image} alt={props.name} />
+         <div className="imagen">
+            <img src={props.image} alt={props.name} />
+         </div>
+         <div className="description" >
+            <Link to={`/detail/${props.id}`}>
+               <h2>{props.name}</h2>
+            </Link>
+            <h3>{props.status}</h3>
+            <h3>{props.species}</h3>
+            <h3>{props.gender}</h3>
+            <h3>{props.origin}</h3>
+         </div>
+         <div className="close">
+            {showButtonX && <button onClick={()=> props.onClose(props.id)}>Delete</button>}  
+         </div>
       </div>
    );
 }

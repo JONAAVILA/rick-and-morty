@@ -3,7 +3,7 @@ import './Cards.css';
 
 export default function Cards({ characters, onClose }) {
    return   ( 
-         <div>
+         <div className='cards'>
                   {characters.map((person)=>{
                         return (
                      <Card

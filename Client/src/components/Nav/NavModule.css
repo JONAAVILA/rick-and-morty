@@ -10,4 +10,7 @@
 }
 .button{
     margin: 0.5rem 0 0.5rem 0;
+    background-color: transparent;
+    color: #f3f3f3;
+    
 }

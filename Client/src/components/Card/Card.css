@@ -1,0 +1,59 @@
+.card_character{
+    padding: 1rem;
+}
+.button_fav{
+    display: flex;
+    justify-content: right;
+}
+
+.button_fav button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    position: absolute;
+    margin: 5px;
+}
+
+.imagen{
+    margin: 0;
+    padding: 0;
+}
+
+.imagen img{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.description{
+    background-color: #2e2e2e;
+    max-width: 100%;
+    padding: 1rem;
+    margin-top: -5px;
+    border-radius: 0 0 8px 8px;
+}
+
+.description h3{
+    display: flex;
+    justify-content: center;
+}
+
+.description a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #f3f3f3;
+}
+
+.close{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.close button{
+    width: 100%;
+    padding: 10px 0 10px 0;
+    border-radius: 8px;
+    margin-top: 5px;
+}
