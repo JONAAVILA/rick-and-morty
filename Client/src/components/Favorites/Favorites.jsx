@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux"
 import Card from "../Card/Card";
 import { orderCards, filterCards } from "../../Redux/Actions";
+import "./Favorites.css";
 // import { useState } from "react";
 
 
@@ -19,8 +20,9 @@ const Favorites = ({onClose})=>{
     }
     
     return(
-        <>
-            <select id="" onChange={handleOrder}>
+        <div className="card_fav">
+            <div className="selector_direction">
+               <select id="" onChange={handleOrder}>
                 <option value={"A"}>Ascendente</option>
                 <option value={"D"}>Descendente</option>
             </select>
@@ -30,22 +32,27 @@ const Favorites = ({onClose})=>{
                 <option value={"Female"}>Famale</option>
                 <option value={"Genderless"}>Genderless</option>
                 <option value={"unknown"}>unknown</option>
-            </select>
+            </select> 
+            </div>
+            
             {myFavorites.map(char => {
                 return (
-                    <Card
+                    <div className="cardfav">
+                        <Card
                         key={char.id}      
                         id={char.id}
                         name={char.name}
                         status={char.status}
                         species={char.gender}
-                        origin={char.origin.name}
+                        origin={char.origin}
                         image={char.image}
                         onClose={onClose}
-                     />
+                        />
+                    </div>
+                    
                 )
             })}
-        </>
+        </div>
     )
 }
 
