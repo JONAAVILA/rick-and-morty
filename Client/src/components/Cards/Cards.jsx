@@ -13,7 +13,7 @@ export default function Cards({ characters, onClose }) {
                         status={person.status}
                         species={person.species}
                         gender={person.gender}
-                        origin={person.name}
+                        origin={person.oeigin}
                         image={person.image}
                         onClose={onClose}
                      />);
