@@ -40,7 +40,8 @@ function App() {
 
 
    function onSearch (id){
-      axios(`http://localhost:3001/rickandmorty/character/${id}`).then(({ data })=>{
+      if(id){
+         axios(`http://localhost:3001/rickandmorty/character/${id}`).then(({ data })=>{
             if(data.name){
                const existingCharacter = characters.find((character)=>character.id === data.id);
                if(existingCharacter){
@@ -52,7 +53,11 @@ function App() {
                window.alert("¡No hay personaje con este ID!");
             }
             
-      });
+         });  
+      }else {
+         window.alert("Introduzca un valor válido!")
+      }
+      
    }
 
    function onClose (id){
