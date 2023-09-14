@@ -17,8 +17,8 @@
     justify-content: left;
     margin: 0.5rem 0 0.5rem 0;
     background-color: transparent;
-    color: #f3f3f3;
-    border: solid #f3f3f3 0.5px;
+    color: #2e2e2e;
+    border: solid #21806E 0.5px;
     cursor: pointer;
     font-size: 1rem;
     border-top-left-radius: 1rem;
@@ -26,8 +26,8 @@
 }
 
 .button:hover{
-    background-color: #f3f3f3;
-    color: #2e2e2e;
+    background-color: #21806E;
+    color: #f3f3f3;
 }
 
 

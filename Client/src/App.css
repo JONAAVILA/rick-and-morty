@@ -9,6 +9,6 @@
 
 .App{
     display: grid;
-    background-color: #2e2e2e;
+    background-color: #c6e9ca;
     grid-template-columns: 1fr 4fr;
 }
