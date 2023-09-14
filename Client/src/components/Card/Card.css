@@ -5,6 +5,7 @@
 .card_character:hover{
     transform: scale(1.01);
     transition: 400ms;
+    box-shadow: 1.5rem 1rem 2rem #2e2e2e;
 }
 
 .button_fav{

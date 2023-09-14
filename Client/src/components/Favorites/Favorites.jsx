@@ -20,8 +20,8 @@ const Favorites = ({onClose})=>{
     }
     
     return(
-        <div className="card_fav">
-            <div className="selector_direction">
+        <div className="conteiner_fav">
+            <div className="selectors">
                <select id="" onChange={handleOrder}>
                 <option value={"A"}>Ascendente</option>
                 <option value={"D"}>Descendente</option>
@@ -37,7 +37,7 @@ const Favorites = ({onClose})=>{
             
             {myFavorites.map(char => {
                 return (
-                    <div className="cardfav">
+                    <div className="card_fav">
                         <Card
                         key={char.id}      
                         id={char.id}

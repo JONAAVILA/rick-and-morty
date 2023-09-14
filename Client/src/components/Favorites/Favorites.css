@@ -1,9 +1,21 @@
-.card_fav{
-    margin: 2rem 2rem 2rem 0;
+.conteiner_fav{
     margin: 2rem 2rem 2rem 0;
     padding: 1rem;
     background-color: #f3f3f3;
     border-radius: 1rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+}
+
+.selectors{
+    display: flex;
+    position: absolute;
+    max-width: 100%;
+    justify-self: center;
+    justify-content: center;
+}
+
+.card_fav{
+    padding-top: 1.5rem;
 }
