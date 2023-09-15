@@ -1,7 +1,8 @@
 
-section{
+.form{
+    width: 100vh;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 
 }

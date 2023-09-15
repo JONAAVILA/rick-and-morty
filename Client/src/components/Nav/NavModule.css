@@ -1,8 +1,8 @@
 
 .Nav_conteiner {
     height: 100vh;
-    padding: 0 0 0 .8rem;
-    margin: 0 -1px;
+    padding: 0 0 0 2rem;
+    margin: 0 -1rem;
     position: sticky;
     top: 0;
     display: flex;
@@ -16,13 +16,12 @@
     display: flex;
     justify-content: left;
     margin: 0.5rem 0 0.5rem 0;
-    background-color: transparent;
-    color: #2e2e2e;
+    background-color: #A8C9F5;
+    color: #f3f3f3;
     border: solid #21806E 0.5px;
     cursor: pointer;
     font-size: 1rem;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-radius: 1rem;
 }
 
 .button:hover{

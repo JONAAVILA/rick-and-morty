@@ -28,7 +28,7 @@ const Form = ({login})=>{
     }
 
     return (
-        <section>   
+        <section className="form">   
             <div className="box_form">
                 <div className="conteiner">
                     

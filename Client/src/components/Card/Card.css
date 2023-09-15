@@ -1,5 +1,10 @@
 .card_character{
+    background-color: #ffffff;
     padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    border-right: solid 3px #b3b3b3;
+    border-bottom: solid 3px #b3b3b3;
 }
 
 .card_character:hover{
@@ -39,7 +44,7 @@
 }
 
 .description{
-    background-color: #838383;
+    background-color: #eeeeee;
     max-width: 100%;
     padding: .5rem;
     margin-top: -5px;
@@ -65,7 +70,7 @@
 
 .description a{
     text-decoration: none;
-    color: #f3f3f3;
+    color: #2e2e2e;
 }
 
 .description a:hover{
