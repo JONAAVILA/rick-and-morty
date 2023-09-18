@@ -16,9 +16,9 @@
     display: flex;
     justify-content: left;
     margin: 0.5rem 0 0.5rem 0;
-    background-color: #A8C9F5;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
     color: #f3f3f3;
-    border: solid #21806E 0.5px;
     cursor: pointer;
     font-size: 1rem;
     border-radius: 1rem;
