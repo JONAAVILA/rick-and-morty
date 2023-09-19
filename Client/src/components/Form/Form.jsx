@@ -27,8 +27,7 @@ const Form = ({login})=>{
         login(userData);
     }
 
-    return (
-        <section className="form">   
+    return ( 
             <div className="box_form">
                 <div className="conteiner">
                     
@@ -82,7 +81,6 @@ const Form = ({login})=>{
                     </form>
                 </div>
             </div>
-        </section> 
     );
 }
 export default Form;

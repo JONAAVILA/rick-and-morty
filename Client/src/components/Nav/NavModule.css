@@ -16,9 +16,9 @@
     display: flex;
     justify-content: left;
     margin: 0.5rem 0 0.5rem 0;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(20px);
-    color: #f3f3f3;
+    border: none;
+    background: linear-gradient(45deg, #ffffff, #bebebe);
+    color: #a8a8a8;
     cursor: pointer;
     font-size: 1rem;
     border-radius: 1rem;
