@@ -1,8 +1,8 @@
 .home{
     margin: 2rem 2rem 2rem 0;
     margin: 2rem 2rem 2rem 0;
-    border: none;
-    background: linear-gradient(135deg, #354457, #2b2b2b);
+    border: solid 2px #575757;
+    box-shadow: -10px -10px 15px #6d6d6d, 10px 10px 15px #000000;
+    background:linear-gradient(135deg,#6d6d6d,#000000 );
     border-radius: 1rem;
-    box-shadow: -8px -8px 25px #354457, 8px 8px 25px #2b2b2b;
 }
