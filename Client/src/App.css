@@ -9,6 +9,7 @@
 
 .App{
     display: grid;
-    background: linear-gradient(45deg, #252525, #2f353d);
+    height:  100vh;
+    background: linear-gradient(45deg, #2b2b2b, #354457);
     grid-template-columns: 1fr 4fr;
 }
