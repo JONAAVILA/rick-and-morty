@@ -1,32 +1,43 @@
 import SearchBar from "../SearchBar/SearchBar";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./NavModule.css";
 
-const Nav = (props)=>(
+
+
+const Nav = (props)=>{
+   const Location = useLocation();
+   const buttonActive = Location.pathname === "/home";
+
+   return(
       <aside className="Nav_conteiner">
             <div>
                <Link to="/about">
-                  <button className="button">About</button>
+                  <button >About</button>
                </Link>   
             </div>
-            <div>
+            {buttonActive ? (<div> 
                <Link to="/home">
-                  <button className="button">Home</button>
+                  <button className="button_home">Home</button>
                </Link>  
-            </div>
+            </div>) : (<div> 
+               <Link to="/home">
+                  <button className="button_home_active">Home</button>
+               </Link>  
+            </div>)}
             <div>
                <Link to="/favorites" >
-                  <button className="button">Favorites</button>   
+                  <button>Favorites</button>   
                </Link>  
             </div>
             <div >
                <SearchBar onSearch={props.onSearch}/>
             </div>
             <div className="button_exit">
-               <button className="button" onClick={props.logOut}>exit</button>
+               <button onClick={props.logOut}>exit</button>
             </div>
       </aside>         
       
-   )
+   )}
 
 export default Nav;

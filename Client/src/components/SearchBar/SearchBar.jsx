@@ -18,7 +18,7 @@ export default function SearchBar(props) {
 
    const handleSearch = ()=>{
          onSearch(id)
-         setExecute(true)
+         setExecute(!execute)
    }
 
    return (
