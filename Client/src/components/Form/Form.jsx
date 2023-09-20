@@ -30,7 +30,6 @@ const Form = ({login})=>{
     return ( 
             <div className="box_form">
                 <div className="conteiner">
-                    
                     <form onSubmit={handleSubmit}>
                         <h1>Bienvenidos</h1>
                         <h4>Rick and Morty App</h4>
