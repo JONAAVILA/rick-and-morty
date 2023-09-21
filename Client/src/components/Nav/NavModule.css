@@ -10,18 +10,26 @@
 }
 
 .Nav_conteiner h1{
-    padding-top: 2rem;
+    padding: 2rem 2rem 0 0;
     color:#ffffff;
-    font-size: 3rem; 
+    font-size: 3rem;
+    text-shadow: 1rem .5rem 1.2rem #2e2e2e;; 
+}
+
+.Nav_conteiner h2{
+    font-size: 13px;
+    color: #ffffff;
 }
 
 .Nav_conteiner p{
-    font-size: .8rem;
+    font-size: 11px;
     color: #ffffff;
 }
 
 .box_searchbar{
-    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: left;
 }
 
 
@@ -206,6 +214,9 @@
     box-shadow: 0 -1rem 0 #ffffff;
 }
 
+.box_exit{
+    padding-bottom: 2rem;
+}
 
 .button_exit{
     position: relative;
@@ -223,8 +234,15 @@
     border-radius: 1rem;
 }
 
-.box_exit{
-    padding-bottom: 2rem;
+.box_exit footer{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.box_exit svg{
+    padding: 3px;
 }
 
 a{

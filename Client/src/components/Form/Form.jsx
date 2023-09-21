@@ -71,13 +71,14 @@ const Form = ({login})=>{
                     <div>
                         {errors.password && <p>{errors.password}</p>}
                     </div>
-                    <div>
-                        <button className="button_submit" >Submit</button>
+                    <div className="button_submit">
+                        <button >Submit</button>
                     </div>
                     <div className="error">
                         {errors.email && <p>{errors.email}</p>}
                     </div>
                     </form>
+                    
                 </div>
             </div>
     );
