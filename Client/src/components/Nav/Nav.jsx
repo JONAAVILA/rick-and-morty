@@ -7,16 +7,23 @@ import "./NavModule.css";
 
 const Nav = (props)=>{
    const Location = useLocation();
-   const buttonActive = Location.pathname === "/home";
+   const buttonHomeActive = Location.pathname === "/home";
+   const buttonFavoritesActive = Location.pathname === "/favorites";
+   const buttonAboutActive = Location.pathname === "/about";
 
    return(
       <aside className="Nav_conteiner">
+         <div>
             <div>
-               <Link to="/about">
-                  <button >About</button>
-               </Link>   
+               <h1>Welcome</h1>
+               <p>This is a aplication of Rick and Morty</p>
             </div>
-            {buttonActive ? (<div> 
+            <div className="box_searchbar">
+               <SearchBar onSearch={props.onSearch}/>
+            </div>
+         </div> 
+         <div>
+            {buttonHomeActive ? (<div> 
                <Link to="/home">
                   <button className="button_home">Home</button>
                </Link>  
@@ -25,17 +32,29 @@ const Nav = (props)=>{
                   <button className="button_home_active">Home</button>
                </Link>  
             </div>)}
-            <div>
-               <Link to="/favorites" >
-                  <button>Favorites</button>   
+            {buttonAboutActive ? (<div> 
+               <Link to="/about">
+                  <button className="button_about">About</button>
                </Link>  
-            </div>
-            <div >
-               <SearchBar onSearch={props.onSearch}/>
-            </div>
-            <div className="button_exit">
-               <button onClick={props.logOut}>exit</button>
-            </div>
+            </div>) : (<div> 
+               <Link to="/about">
+                  <button className="button_about_active">About</button>
+               </Link>  
+            </div>)}
+            {buttonFavoritesActive ? (<div> 
+               <Link to="/favorites">
+                  <button className="button_favorites">Favoritos</button>
+               </Link>  
+            </div>) : (<div> 
+               <Link to="/favorites">
+                  <button className="button_favorites_active">Favoritos</button>
+               </Link>  
+            </div>)}
+         </div>
+            
+         <div className="box_exit">
+               <button className="button_exit" onClick={props.logOut}>Exit</button>
+         </div>
       </aside>         
       
    )}
