@@ -16,15 +16,17 @@ export default function SearchBar(props) {
          }  
    }
 
-   const handleSearch = ()=>{
-         onSearch(id)
-         setExecute(!execute)
+   const handleSearch = (event)=>{
+         if(event.key === "Enter"){
+            onSearch(id)
+            setExecute(!execute)
+         }
+         
    }
 
    return (
       <div className="search">
-         <input className="input_search" type='search' placeholder="Search" onChange={handleChange}/>
-         <button className="button_search" onClick={handleSearch} >Agregar</button>
+         <input className="input_search" type='search' placeholder="Press Enter" onChange={handleChange} onKeyPress={handleSearch}/>
       </div>
    );
 }

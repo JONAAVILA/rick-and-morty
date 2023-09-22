@@ -227,7 +227,7 @@
     font-size: 1rem;
     border: solid 1px #d3d3d3;
     border-radius: 50%;
-    box-shadow: 1rem .5rem 1.2rem #2e2e2e; 
+    box-shadow: .7rem .2rem 1.2rem #1f5f5e, -.7rem -.2rem 1.2rem #52dddb
 }
 
 .button_exit svg{
@@ -235,9 +235,7 @@
 }
 
 .button_exit:hover{
-    transform: scale(1.1);
     transition: ease-in 400ms;
-    border-radius: .9rem;
     box-shadow: .5rem .5rem 1rem #ff49499a, -.5rem -.5rem 1rem #ff49499a;
     color: #ff49499a;
 }
