@@ -1,15 +1,15 @@
 
 .conteiner{
     color: #f3f3f3;
-    height: 300px;
-    width: 400px;
+    height: 350px;
+    width: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
     animation: fade-in 400ms ease-in-out 400ms forwards;
-    border: solid 1px #f3f3f3;
+    border: solid .3rem #f3f3f3;
     border-radius: 1rem;
-    background-image: url(	https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png);
+    background-color: #ffffff40 ;
 }
 
 @keyframes fade-in {

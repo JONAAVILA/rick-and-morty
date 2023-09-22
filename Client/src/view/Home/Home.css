@@ -1,7 +1,9 @@
 .home{
     margin: 2rem 2rem 2rem 0;
     margin: 2rem 2rem 2rem 0;
-    background-color: #ffffff ;
+    min-width: 150vh;
+    background-color: #ffffff40 ;
+    border: solid .3rem #ffffff;
     border-radius: 1rem;
     box-shadow: 1.5rem 1rem 2rem #2e2e2e;
 }
