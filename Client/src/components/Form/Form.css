@@ -1,15 +1,15 @@
 
 .conteiner{
-    color: #f3f3f3;
+    color: #d3d3d3;
     height: 350px;
     width: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
     animation: fade-in 400ms ease-in-out 400ms forwards;
-    border: solid .3rem #f3f3f3;
+    border: solid .3rem #d3d3d3;
     border-radius: 1rem;
-    background-color: #ffffff40 ;
+    background-color: #ffffff10 ;
 }
 
 @keyframes fade-in {
@@ -40,12 +40,14 @@ h1{
     display: flex;
     justify-content: center;
     font-size: 3rem;
+    color: #505050;
 }
 
 h4{
     display: flex;
     justify-content: center;
     padding-bottom: 2rem;
+    color: #505050;
 }
 
 
@@ -66,7 +68,7 @@ p{
 .input{
     
     background-color:transparent;
-    border: solid 1px #f3f3f3;
+    border: solid 1px #d3d3d3;
     border-radius: .5rem;
 }
 
@@ -84,8 +86,8 @@ p{
     height: 2rem;
     width: 100%;
     background-color: transparent;
-    color: #f3f3f3;
-    border: solid 1px #f3f3f3;
+    color: #505050;
+    border: solid 1px #d3d3d3;
     border-radius: 1rem;
 }
 

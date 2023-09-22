@@ -1,8 +1,9 @@
 .conteiner_fav{
     margin: 2rem 2rem 2rem 0;
     padding: 1rem;
-    background-color: #ffffff;
+    background-color: #ffffff40;
     border-radius: 1rem;
+    border: solid .3rem #d3d3d3;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     max-width: 100%;

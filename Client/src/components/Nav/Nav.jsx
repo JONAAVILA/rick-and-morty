@@ -15,7 +15,7 @@ const Nav = (props)=>{
       <aside className="Nav_conteiner">
          <div className="box_title">
             <div>
-               <h1>Welcome</h1>
+               <h1 className="tracking-in-expand" >Welcome</h1>
             </div>
             <div>
                <h2>This is a aplication of Rick and Morty</h2>
@@ -37,15 +37,6 @@ const Nav = (props)=>{
                   <button className="button_home_active">Home</button>
                </Link>  
             </div>)}
-            {buttonAboutActive ? (<div> 
-               <Link to="/about">
-                  <button className="button_about">About</button>
-               </Link>  
-            </div>) : (<div> 
-               <Link to="/about">
-                  <button className="button_about_active">About</button>
-               </Link>  
-            </div>)}
             {buttonFavoritesActive ? (<div> 
                <Link to="/favorites">
                   <button className="button_favorites">Favoritos</button>
@@ -53,6 +44,15 @@ const Nav = (props)=>{
             </div>) : (<div> 
                <Link to="/favorites">
                   <button className="button_favorites_active">Favoritos</button>
+               </Link>  
+            </div>)}
+            {buttonAboutActive ? (<div> 
+               <Link to="/about">
+                  <button className="button_about">About</button>
+               </Link>  
+            </div>) : (<div> 
+               <Link to="/about">
+                  <button className="button_about_active">About</button>
                </Link>  
             </div>)}
          </div>
@@ -70,7 +70,7 @@ const Nav = (props)=>{
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
                         <path d="M14 9.75a3.016 3.016 0 0 0 -4.163 .173a2.993 2.993 0 0 0 0 4.154a3.016 3.016 0 0 0 4.163 .173"></path>
-                        </svg> Create with passion and <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        </svg> 2023 - Create with passion and <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
                         </svg> 
