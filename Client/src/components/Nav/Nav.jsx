@@ -13,13 +13,17 @@ const Nav = (props)=>{
 
    return(
       <aside className="Nav_conteiner">
-         <div>
+         <div className="box_title">
             <div>
                <h1>Welcome</h1>
+            </div>
+            <div>
                <h2>This is a aplication of Rick and Morty</h2>
+            </div>
+            <div>
                <p>You can search any character whatever you want and add it to favorites</p>
             </div>
-         </div> 
+         </div>
          <div>
             <div className="box_searchbar">
                <SearchBar onSearch={props.onSearch}/>
