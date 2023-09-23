@@ -8,14 +8,17 @@
 .search{
     display: flex;
     background-color: #d3d3d340;
-    border-radius: 30rem;
+    border-radius: 2rem;
     padding: 6px 9px 6px 9px ;
-    border: 2px solid #d3d3d3;
+    border: 1px solid #d3d3d3;
     box-shadow: .7rem .2rem 1.2rem #1f5f5e, -.7rem -.2rem 1.2rem #52dddb
 }
 
 .input_search{
-    background: transparent;
+    background-image: url('./img/search.svg');
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    background-color: transparent;
     border: none;
     padding-left: 1rem;
     width: 0;

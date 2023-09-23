@@ -23,16 +23,16 @@ const Favorites = ({onClose})=>{
         <div className="conteiner_fav">
             <div className="selectors">
                <select id="" onChange={handleOrder}>
-                <option value={"A"}>Ascendente</option>
-                <option value={"D"}>Descendente</option>
-            </select>
-            <select id="" onChange={handleFilter}>
-                <option value={"Sellecionar"}>Sellecionar</option>
-                <option value={"Male"}>Male</option>
-                <option value={"Female"}>Famale</option>
-                <option value={"Genderless"}>Genderless</option>
-                <option value={"unknown"}>unknown</option>
-            </select> 
+                    <option value={"A"}>Ascendente</option>
+                    <option value={"D"}>Descendente</option>
+                </select>
+                <select id="" onChange={handleFilter}>
+                    <option value={"Sellecionar"}>Sellecionar</option>
+                    <option value={"Male"}>Male</option>
+                    <option value={"Female"}>Famale</option>
+                    <option value={"Genderless"}>Genderless</option>
+                    <option value={"unknown"}>unknown</option>
+                </select> 
             </div>
             
             {myFavorites.map(char => {

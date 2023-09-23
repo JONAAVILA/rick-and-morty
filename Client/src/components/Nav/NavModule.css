@@ -1,6 +1,7 @@
 
 .Nav_conteiner {
     height: 100vh;
+    min-width: 250px;
     padding-left: 2rem;
     position: sticky;
     top: 0;
@@ -11,7 +12,7 @@
 
 .box_title{
     justify-content: center;
-    padding-right: 1rem;
+    margin-right: 2rem;
 }
 
 .box_title h1{
@@ -22,10 +23,18 @@
 }
 
 .box_title h2{
-    font-size: 1rem;
+    font-size: .9rem;
     color:#d3d3d3;
+    text-align: center;
 }
 
+.box_title p{
+    font-size: .8rem;
+    color: #464646;
+    text-align: center;
+    font-weight: 600;
+
+}
 
 .box_searchbar{
     display: flex;

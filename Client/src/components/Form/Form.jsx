@@ -31,8 +31,8 @@ const Form = ({login})=>{
             <div className="box_form">
                 <div className="conteiner">
                     <form onSubmit={handleSubmit}>
-                        <h1>Bienvenidos</h1>
-                        <h4>Rick and Morty App</h4>
+                        <h1>RICK AND MORTY APP</h1>
+                        <h4>login and enjoy</h4>
                     <div className="div_icon" >                     
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail-forward" width={24} height={24} viewBox="0 0 24 24" stroke-width={2} stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>

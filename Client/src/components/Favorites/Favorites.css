@@ -18,6 +18,21 @@
     justify-content: center;
 }
 
+.selectors select{
+    background-color: #ffffff40;
+    border: solid 1px #d3d3d3;
+    border-radius: 2rem;
+    padding: 2px 9px 2px 9px ;
+    margin: 0 5px 0 5px;
+    color: #2e2e2e;
+    text-align: center;
+    box-shadow: .7rem .2rem 1.2rem #3b3b3b, -.7rem -.2rem 1.2rem #e6e6e6
+}
+
+.selectors option{
+    background:transparent;
+}
+
 .card_fav{
     padding-top: 1.5rem;
 }

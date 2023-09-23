@@ -4,8 +4,6 @@
     background-color: #ffffff40;
     border-radius: 1rem;
     border: solid .3rem #d3d3d3;
-    display: block;
-    justify-content: center;
     max-width: 100%;
     box-shadow: 1.5rem 1rem 2rem #2e2e2e;
 }
@@ -49,8 +47,11 @@
     font-size: 2rem;
 }
 
-.about_p{
+.box_about p{
+    font-size: .8rem;
+    color: #464646;
     text-align: center;
+    font-weight: 600; 
 }
 
 .react{
@@ -68,4 +69,22 @@
 .box_icons:hover{
     transform: scale(1.05);
     transition: ease-in 300ms;
+}
+
+.box_descripcion{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.descripcion_img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.descripcion{
+    display: flex;
+    justify-content: center;
+    width: 50%;
 }
