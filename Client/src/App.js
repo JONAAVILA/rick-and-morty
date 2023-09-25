@@ -73,7 +73,7 @@ function App() {
           {pathname !== "/" && <Nav onSearch={onSearch} logOut={logOut}/>}
         <Routes>
           <Route path="/" element={<Login login={login}/>} />
-          <Route path="/home" element={<Home characters={characters} onClose={onClose}/>} Route/>
+          <Route path="/home" element={<Home characters={characters} onClose={onClose} onSearch={onSearch}/>} Route/>
           <Route path='/favorites' element={<Favorites onClose={onClose}/>} />
           <Route path="/about" element={<About/>}/>
           <Route path='/detail/:id' element={<Detail/>} />
