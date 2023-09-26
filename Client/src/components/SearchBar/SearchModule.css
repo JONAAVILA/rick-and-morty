@@ -9,14 +9,14 @@
     display: flex;
     background-color: #d3d3d340;
     border-radius: 2rem;
-    padding: 6px 9px 6px 9px ;
+    padding: 9px 12px 9px 12px ;
     border: 1px solid #d3d3d3;
     box-shadow: .7rem .2rem 1.2rem #1f5f5e, -.7rem -.2rem 1.2rem #52dddb
 }
 
 .input_search{
     background-image: url('./img/search.svg');
-    background-size: 1rem;
+    background-size: 1.1rem;
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;

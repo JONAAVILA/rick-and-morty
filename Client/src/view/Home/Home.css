@@ -7,3 +7,26 @@
     border-radius: 1rem;
     box-shadow: 1.5rem 1rem 2rem #2e2e2e;
 }
+
+.box_random{
+    display: flex;
+    max-width: 100%;
+    justify-self: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.box_random button{
+    display: flex;
+    background-color: #ffffff40;
+    border: solid 1px #d3d3d3;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    box-shadow: .7rem .2rem 1.2rem #3b3b3b, -.7rem -.2rem 1.2rem #e6e6e6
+}
+
+.box_random svg:hover{
+    rotate: 360deg;
+    transition: ease 1s;
+}

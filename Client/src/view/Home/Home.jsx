@@ -4,7 +4,9 @@ import './Home.css';
 
 const Home = ({characters,onClose, onSearch})=>(
     <div className="home">
-      <ButtonRandom onSearch={onSearch}/>
+      <div className="box_random">
+        <ButtonRandom onSearch={onSearch}/>
+      </div>
       <Cards characters={characters} onClose={onClose}/>  
     </div>
     
