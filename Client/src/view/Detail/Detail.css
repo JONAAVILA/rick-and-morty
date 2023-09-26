@@ -1,3 +1,19 @@
 .Detail_conteiner {
-    display: block;
+    margin: 2rem 2rem 2rem 0;
+    margin: 2rem 2rem 2rem 0;
+    min-width: 100vh;
+    background-color: #ffffff40 ;
+    border: solid .3rem #d3d3d3;
+    border-radius: 1rem;
+    box-shadow: 1.5rem 1rem 2rem #2e2e2e;
+}
+
+.box_detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_detail img{
+    border-radius: 50%;
 }

@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import './Detail.css';
 
 
 const Detail = ()=>{
@@ -20,13 +21,23 @@ const Detail = ()=>{
     return(
         <div className="Detail_conteiner">
             <div>
-               <img src={character.image} alt={character.name}/>
-   
                <h1>{character.name}</h1>
-               <h2>{character.status}</h2>
-               <h2>{character.species}</h2>
-               <h2>{character.gender}</h2>
             </div>
+            <div className="box_detail">
+               <div>
+                  <h2>Status: {character.status}</h2>
+                  <h2>Location: {character.location}</h2>
+               </div>
+               <div>
+                  <img src={character.image} alt={character.name}/>
+               </div>
+               <div>
+                  
+                  <h2>Species: {character.species}</h2>
+                  <h2>Genger: {character.gender}</h2>
+               </div>
+            </div>
+            
         </div>
     );      
 }
