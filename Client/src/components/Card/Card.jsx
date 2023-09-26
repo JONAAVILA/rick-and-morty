@@ -58,15 +58,26 @@ export default function Card(props) {
                <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
                </svg></button>}  
             </div>
-            <div className="icon_life">
+            
+            { props.status === "Alive" ? (
+              <div className="icon_life">
                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-activity-heartbeat" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                <path d="M3 12h4.5l1.5 -6l4 12l2 -9l1.5 3h4.5"></path>
                </svg>
-            </div>
+            </div> 
+            ) : (
+               <div className="icon_life_dead">
+               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-activity-heartbeat" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+               <path d="M3 12h4.5l1.5 -6l4 12l2 -9l1.5 3h4.5"></path>
+               </svg>
+            </div> 
+            ) 
+            }
             {
          isFav ? (
-            <div className="button_fav">
+            <div className="button_fav_active">
                <button onClick={handleFavorite}>
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
