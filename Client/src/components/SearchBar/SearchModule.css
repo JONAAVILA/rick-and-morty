@@ -6,6 +6,7 @@
 }
 
 .search{
+    cursor: pointer;
     display: flex;
     background-color: #d3d3d340;
     border-radius: 2rem;
@@ -23,6 +24,7 @@
     padding-left: 1rem;
     width: 0;
     transition: all 1s;
+    cursor: pointer;
 }
 
 .input_search:focus{
