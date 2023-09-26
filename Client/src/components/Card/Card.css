@@ -4,6 +4,7 @@
     margin: 1rem;
     padding: 4px;
     border-radius: 1rem;
+    background-color: #2e2e2e46;
     box-shadow: 1rem .5rem 2rem #2e2e2e;
     background-image: url(https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png);
 }
@@ -83,9 +84,9 @@
 }
 
 .icon_life{
-    color: #2ae62a;
+    color: #4AD481;
 }
 
 .icon_life_dead{
-    color: #f13434;
+    color: #D4542F;
 }
