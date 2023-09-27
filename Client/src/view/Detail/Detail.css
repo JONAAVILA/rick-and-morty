@@ -1,4 +1,6 @@
 .Detail_conteiner {
+    display: flex;
+    justify-content: right;
     margin: 2rem 2rem 2rem 0;
     margin: 2rem 2rem 2rem 0;
     min-width: 100vh;
@@ -8,12 +10,21 @@
     box-shadow: 1.5rem 1rem 2rem #2e2e2e;
 }
 
-.box_detail{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Detail_conteiner img{
+    z-index: 1;
+    width: 45%  ;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    filter:blur(4px) grayscale(50%);
 }
 
-.box_detail img{
-    border-radius: 50%;
+.box_name {
+    position: absolute;
+    justify-content: left;
+    z-index: 2;
+}
+
+.box_name h1{
+    position: absolute;
+    display: relative;
 }
