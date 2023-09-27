@@ -24,7 +24,7 @@
 .imagen img{
     position: relative;
     z-index: 1;
-    height: 230px;
+    height: 225px;
     width: 200px;
     border-radius: 1rem;
     filter: grayscale(75%);
@@ -38,10 +38,12 @@
 }
 
 .description h2{
+    text-align: center;
     position: relative;
     z-index: 4;
     color: #d3d3d3;
-    font-size: 14px;
+    font-size: 100%;
+    max-width: 100%;
 }
 
 .description h2:hover{
@@ -82,10 +84,15 @@
     color: #d3d3d3;
 }
 
+.icon-tabler-heart:hover{
+    color: #ec63b8;
+    transition: ease 500ms;
+}
+
 .button_fav_active button{
     background-color: transparent;
     border: none;
-    color: #f13434;
+    color: #ff2323;
 }
 
 .icon_life{
