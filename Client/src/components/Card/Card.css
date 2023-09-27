@@ -73,7 +73,7 @@
     color: #d3d3d3;
 }
 
-.box_delete button:hover{
+.box_delete button svg:hover{
     color: #f13434;
     transition: ease 0.5s;
 }
@@ -81,22 +81,25 @@
 .button_fav button{
     background-color: transparent;
     border: none;
-    color: #d3d3d3;
 }
 
-.icon-tabler-heart:hover{
+.button_fav svg:hover{
     color: #ec63b8;
-    transition: ease 500ms;
 }
 
 .button_fav_active button{
+    background-color: transparent;
+    border: none;
+}
+
+.button_fav_active button svg{
     background-color: transparent;
     border: none;
     color: #ff2323;
 }
 
 .icon_life{
-    color: #4AD481;
+    
     animation: pulse 1.5s infinite;
 }
 
@@ -110,9 +113,9 @@
     100% {
       transform: scale(1);
     }
-  }
+}
 
-.icon_life_dead{
+.icon_life_dead svg{
     color: #D4542F;
 }
 
