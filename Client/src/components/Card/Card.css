@@ -98,6 +98,10 @@
     color: #ff2323;
 }
 
+.button_fav_active button svg:hover{
+    color: #ec63b8;
+}
+
 .icon_life{
     
     animation: pulse 1.5s infinite;
