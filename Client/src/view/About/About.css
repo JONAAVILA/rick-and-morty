@@ -1,5 +1,7 @@
 .about{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 2rem 2rem 2rem 0;
     padding: 1rem 6rem 0 6rem;
     background-color: #ffffff40;
@@ -51,6 +53,7 @@
 .box_about p{
     font-size: .8rem;
     color: #464646;
+    display: flex;
     text-align: center;
     font-weight: 600; 
 }
@@ -66,11 +69,15 @@
     width: 2rem;
     height: 2rem;
     padding: .2rem;
+    transition: all 1s ease;
 }
 
 .box_icons:hover{
-    transform: scale(1.05);
-    transition: ease-in 300ms;
+    transform: scale(1.1);
+}
+
+.box_icons:active{
+    transform: scale(1);
 }
 
 .box_descripcion{
@@ -80,6 +87,23 @@
     width: 100%;
 }
 
+.box_resumen{
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 3%;
+}
+
+.box_resumen h1{
+    font-size: 3rem;
+    color: #d3d3d3;
+}
+
+.box_resumen p{
+    font-size: .9rem;
+    color: #464646;
+    font-weight: 600;
+    text-align: center;
+}
 
 .box_img{
     height: 300px;
@@ -92,7 +116,15 @@
     justify-content: center;
     align-items: center;
     background-image: url(https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png);
+    transition: all 1s ease;
+}
 
+.box_img:hover{
+  transform: scale(1.1);
+}
+
+.box_img:active{
+  transform: scale(1);
 }
 
 .box_img h4{

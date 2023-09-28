@@ -7,12 +7,26 @@
     background-color: #2e2e2e46;
     box-shadow: 1rem .5rem 2rem #2e2e2e;
     background-image: url(https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png);
+    transition: all 1s ease;
+    animation: fadeIn 1s ease forwards;
 }
 
 .card_character:hover{
-    transform: scale(1.01);
-    transition: 400ms;
+    transform: scale(1.1);
     box-shadow: 1.5rem 1rem 2rem #2e2e2e;
+}
+
+.card_character:active{
+    transform: scale(1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
 }
 
 .imagen{

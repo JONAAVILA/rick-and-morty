@@ -5,21 +5,12 @@ const About = ()=>{
     return (
         <div className="about">
             <div className="box_resumen">
-                <div>
-                    <h2 className="tracking-in-expand" >Resumen</h2>
-                </div>
-                <div className="box_about"> 
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique nihil non sit tempore maxime ipsum porro repellendus ad omnis neque libero expedita nobis, eligendi amet velit a explicabo deserunt odio?</p>
-                </div>
-                
-                
+                <h1 className="tracking-in-expand">Summary</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae itaque obcaecati ut adipisci iusto quo ea ratione sapiente iure culpa exercitationem asperiores explicabo officia vero nisi, corporis minus impedit repellendus saepe nostrum magni quisquam autem reiciendis. Illum hic aspernatur quas.</p>
             </div>
-                        
-            
                 <div className="box_descripcion">
-                    
                     <div className="box_img">
-                        <h4>Jonatan Avila</h4>
+                        <h4 className="tracking-in-expand">Jonatan Avila</h4>
                         <div className="img" ></div>
                         <div className="conteiner_icons">
                             <a href="https://github.com/JONAAVILA" target="_blank" rel="noreferrer">
@@ -52,6 +43,7 @@ const About = ()=>{
                     <div className="descripcion">
                         <h2 className="tracking-in-expand">Author</h2>
                         <h4>Web Developer Full Stack</h4>
+                        <h4>Studies: Student at Henry</h4>
                         <h4>Origin: Buenos Aires, Argentina</h4>
                         <h4>Years: 34</h4>
                         <h4>Technologies that I master:</h4>
