@@ -61,7 +61,13 @@ p{
     border-radius: .5rem;
 }
 
+input:focus ~ label,
+input:focus ~ :invalid{
+    top:-1rem
+}
+
 .input_label{
+    position: absolute;
     font-size: 0.8rem;
 }
 
@@ -79,6 +85,7 @@ p{
     border: solid 1px #d3d3d3;
     border-radius: 1rem;
     box-shadow: .7rem .2rem 1.2rem #2b2b2b, -.7rem -.2rem 1.2rem #d3d3d3;
+
 }
 
 .button_submit button:hover{
