@@ -31,7 +31,7 @@ const Form = ({login})=>{
             <div className="box_form">
                 <div className="conteiner">
                     <form onSubmit={handleSubmit}>
-                        <h1>RICK AND MORTY APP</h1>
+                        <h1>WELCOME</h1>
                         <h4>login and enjoy</h4>
                     <div className="div_icon" >                     
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail-forward" width={24} height={24} viewBox="0 0 24 24" stroke-width={2} stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -66,20 +66,20 @@ const Form = ({login})=>{
                             onChange={handleChange}
                             required
                         />
+                        
                         <label className="input_label">Password</label>
                     </div>
-                    <div>
-                        {errors.password && <p>{errors.password}</p>}
+                    <div className="error_one">
+                        {errors.email && <p>{errors.email}</p>}
+                        {errors.password && <p className="error_two">{errors.password}</p>}
                     </div>
                     <div className="button_submit">
                         <button >Submit</button>
                     </div>
-                    <div className="error">
-                        {errors.email && <p>{errors.email}</p>}
-                    </div>
-                    </form>
                     
+                    </form>
                 </div>
+                <div className="fondo"></div>
             </div>
     );
 }

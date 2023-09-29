@@ -1,15 +1,17 @@
 
 .conteiner{
+
     color: #d3d3d3;
-    height: 350px;
+    height: 400px;
     width: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid .3rem #d3d3d3;
     border-radius: 1rem;
-    background-color: #ffffff10 ;
+    background-color: #2e2e2e70;
+    background-image: url(https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png);
     box-shadow: .7rem .2rem 1.2rem #2b2b2b;
+    z-index: 2;
 }
 
 .box_form{
@@ -28,24 +30,30 @@
 h1{
     display: flex;
     justify-content: center;
-    font-size: 2rem;
-    color: #2e2e2e;
+    text-align: center;
+    font-size: 4rem;
+    color: #d3d3d3;
+    padding: 0;
 }
 
 h4{
     display: flex;
     justify-content: center;
-    padding-bottom: 2rem;
-    color: #2e2e2e;
+    color: #d3d3d3;
 }
 
 
 .div_icon{
     position: relative;
+    margin: 25px;
+    width: 310px;
     align-items: center;
     display: flex;
-    margin: 0 0 2px 0;
-    
+}
+
+.div_icon svg{
+    position: absolute;
+    right: 8px;
 }
 
 p{
@@ -55,33 +63,40 @@ p{
 
 
 .input{
-    
-    background-color:transparent;
+    width: 100%;
+    height: 45px;
+    background: transparent;
     border: solid 1px #d3d3d3;
-    border-radius: .5rem;
+    border-radius: 1rem;
+    outline: none;
+    padding: 0 20px 0 5px;
 }
 
 input:focus ~ label,
-input:focus ~ :invalid{
-    top:-1rem
+input:focus ~ :valid{
+    top:-1.2rem
 }
 
 .input_label{
     position: absolute;
-    font-size: 0.8rem;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-40%);
+    pointer-events: none;
+    transition: 0.5s;
 }
 
 .button_submit{
     display: flex;
     justify-content: center;
-    padding-top: 1rem;
+    padding-top: 2.5rem;
 }
 
 .button_submit button{
     height: 2rem;
     width: 100%;
     background-color: transparent;
-    color: #2e2e2e;
+    color: #d3d3d3;
     border: solid 1px #d3d3d3;
     border-radius: 1rem;
     box-shadow: .7rem .2rem 1.2rem #2b2b2b, -.7rem -.2rem 1.2rem #d3d3d3;
@@ -93,3 +108,30 @@ input:focus ~ :invalid{
     background-color: #c7c7c788;
 }
  
+
+.error_one{
+    position: absolute;
+    color: #f14949;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.fondo{
+    background-image: url("./rickandmorty.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width:35%;
+    height:60%;
+    z-index: 1;
+    animation: rotarInfinito 100s infinite linear;
+}
+
+@keyframes rotarInfinito {
+    from {
+      transform: rotate(0deg); /* Rotación inicial */
+    }
+    to {
+      transform: rotate(360deg); /* Rotación completa */
+    }
+  }
